@@ -1,0 +1,32 @@
+:root {
+  --container-bg: #ff0066;
+  --title-colot: #fff;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--container-bg);
+}
+
+.container {
+  position: absolute;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+main .title {
+  color: var(--title-colot);
+}
+
+main .subtitle {
+  color: var(--title-colot);
+}
+
+.dark-mode:root {
+  --container-bg: #ff00ff;
+  --title-colot: #000;
+}
+
+#dark-mode-btn {
+    cursor: pointer;
+}
