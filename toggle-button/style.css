@@ -1,0 +1,60 @@
+.switch {
+    position: relative;
+    display: inline-block; /*porque não dá pra definir altura e largura em um span, temos q usar inline-block*/
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0000cc;
+    -webkit-transition: .4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: url("./icons/moon.png");
+    height: 24px;
+    width: 24px;
+    top: 5px;
+    left: 4px;
+    background-color: #0000cc;
+    -webkit-transition: .4s;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #ff9933;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(29px);
+    -ms-transform: translateX(29px);
+    transform: translateX(29px);
+    content: url("./icons/brightness.png");
+    background-color: #ff9933;
+}
+
+.round {
+    border-radius: 34px;
+}
+
+.round::before {
+    border-radius: 50%;
+}
