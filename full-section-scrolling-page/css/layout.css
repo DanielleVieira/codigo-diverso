@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-rows: 10vh auto 10vh;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    height: 80vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+footer {
+    grid-area: footer;
+}
+
+section {
+    height: 80vh;
+    scroll-snap-align: start;
+}
+
+.banner {
+    border: var(--cor-primaria) solid 1px;
+ 
+}
+
+.produtos {
+    border: var(--cor-secundaria) solid 1px;
+   
+}
+
+.quemSomos {
+    border: var(--cor-destaque1) solid 1px;
+    height: 200vh;
+   
+}
+
+.nossoTime {
+    border: var(--cor-destaque2) solid 1px;
+   
+}
+

@@ -1,0 +1,56 @@
+:root {
+    --fonte-titulo: 'Dancing Script', cursive;
+    --fonte-subtitulo: 'Montserrat', sans-serif;
+    --fonte-corpo: 'Montserrat', sans-serif;
+    --tamanho-titulo: 32px;
+    --tamanho-subtitulo: 18px;
+    --tamanho-texto: 14px;
+    --peso-titulo: 400;
+    --peso-subtitulo: 700;
+    --peso-texto: 400;
+    --cor-primaria: #FF80AB;
+    --cor-secundaria: #90CAF9;
+    --cor-destaque1: #C4E538;
+    --cor-destaque2: #D7A5FF;
+    --cor-fundo: #F5F5F5;
+    --cor-realce: #FF7043;
+    --cor-titulo: #333333;
+    --cor-subtitulo: #666666;
+    --cor-texto: #888888;
+    /* --cor-texto-navegacao: #FFF;
+    --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+}
+
+.dark-mode:root {
+    --cor-fundo: #121212;
+    --cor-titulo: #FFFFFF;
+    --cor-subtitulo: #CCCCCC;
+    --cor-texto: #E0E0E0;
+    --text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+html, body {
+    font-family: var(--fonte-corpo);
+    font-size: var(--tamanho-texto);
+    font-weight: var(--peso-texto);
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+    font-size: var(--tamanho-titulo);
+    font-weight: var(--peso-titulo);
+    color: var(--cor-realce);
+}
+
+h2 {
+    font-family: var(--fonte-subtitulo);
+    font-size: var(--tamanho-subtitulo);
+    font-weight: var(--peso-subtitulo);
+    color: var(--cor-titulo);
+}
+
+header {
+    border-bottom: #121212 solid 1px;
+}
